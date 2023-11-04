@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing</title>
+    <link rel="stylesheet" href="recipe.css">
+</head>
+<body>
+    <header>
+        <h1>My Recipe Book</h1>
+    </header>
+    <main>
+        <section id="recipe-list">
+            <h2>My Recipes</h2>
+            <ul id="recipes"></ul>
+        </section>
+        <section id="recipe-form">
+            <h2>Add/Edit Recipe</h2>
+            <form id="recipe-form">
+                <input type="hidden" id="recipe-id">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" required>
+                <label for="recipe-ingredients">Ingredients:</label>
+                <textarea id="recipe-ingredients" required></textarea>
+                <button id="save-button" type="submit">Save</button>
+            </form>
+        </section>
+    </main>
+    <script src="reciipe.js"></script>
+</body>
+</html>
